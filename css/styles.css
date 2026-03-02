@@ -1,6 +1,7 @@
 /* base */
 :root {
   --color-brand: rgb(11, 193, 114);
+  --color-primary-light: rgb(255, 255, 255);
 }
 body {
     margin: 0;
