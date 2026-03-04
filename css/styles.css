@@ -77,3 +77,33 @@ font-size: 65px;
     color: var(--color-brand);
     transition: 0.5s;
 }
+/* Biography Section */
+.biography-section {
+    
+}
+.biography__Sumdu {
+    width: 30%;
+    height: auto;
+}
+
+.biography__it-shostka {
+    width: 30%;
+    height: auto;
+}
+
+.biography__genius-space {
+    width: 30%;
+    height: auto;
+}
+/* Contact Section */
+.contact-section {
+    
+}
+/* Resume Section */
+.resume-section {
+    
+}
+/* Projects Section */
+.projects-section {
+    
+}
