@@ -1,4 +1,10 @@
 /* base */
+
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+
 :root {
   --color-brand: rgb(11, 193, 114);
   --color-primary-light: rgb(255, 255, 255);
@@ -6,6 +12,7 @@
 body {
     margin: 0;
     padding: 0;
+    bottom: 0;
 }
 
 .container {
@@ -39,7 +46,7 @@ a {
 }
 
 .header__container {
-background-image: url(/images/istockphoto-2119624053-1024x1024.jpg);
+background-image: url(/images/black-fon.jpg);
 height: 100vh;
 display: flex;
     justify-content: center;
@@ -64,6 +71,7 @@ font-size: 65px;
 }
 
 .header__main {
+    margin-top: -40px;
 }
 
 /* link */
@@ -106,4 +114,12 @@ font-size: 65px;
 /* Projects Section */
 .projects-section {
     
+}
+/* Footer */
+.footer-section {
+   background-image: url(/images/footer-fon.jpg);
+   z-index: -1;
+}
+.icon {
+    fill: white;
 }
