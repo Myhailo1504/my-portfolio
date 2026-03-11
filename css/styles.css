@@ -2,13 +2,15 @@
 
 
 :root {
-  --color-brand: rgb(11, 193, 114);
+  --color-brand-light: rgb(11, 193, 114);
   --color-primary-light: rgb(255, 255, 255);
+  --color-brand-fon: rgb(225, 243, 245);
 }
 body {
     margin: 0;
     padding: 0;
     bottom: 0;
+    background-color: var(--color-brand-fon);
 }
 
 .container {
@@ -42,36 +44,36 @@ a {
 
 /* header */
 .header{
+    margin-bottom: 60px;
 }
 
 .header__container {
-background-image: url(/images/black-fon.jpg);
-height: 100vh;
-display: flex;
+    background-image: url(/images/black-fon.jpg);
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .header__menu {
-display: flex;  
-width: 100%;
-justify-content: center;
-gap: 70px;
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    gap: 70px;
+    margin-top: -70px;
+    margin-bottom: 40px;
 }
-
-
 
 .header__name {
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 65px;
+    margin-bottom: 30px;
 }
 
-.header__main {
-    margin-top: -40px;
-}
 
 /* link */
 .link {
@@ -81,10 +83,18 @@ font-size: 65px;
 }
 
 .link:hover {
-    color: var(--color-brand);
+    color: var(--color-brand-light);
     transition: 0.5s;
 }
 /* Biography Section */
+.biography-section {
+    margin-bottom: 60px;
+}
+
+.biography__title {
+     margin-bottom: 30px;
+}
+
 .biography__text {
     max-width: 650px;
     width: 100%;
@@ -94,7 +104,7 @@ font-size: 65px;
 .biography__first {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .biography__Sumdu {
@@ -107,20 +117,20 @@ font-size: 65px;
 .biography__second {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
 }
 
 .biography__it-shostka {
     width: 20%;
     height: auto;
-    margin-top: -30px;
     margin-left: 20px;
 }
 
 .biography__third {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .biography__genius-space {
@@ -143,13 +153,22 @@ font-size: 65px;
 
 
 /* Resume Section */
-.resume__first {
-    display: flex;
-    justify-content: space-between;
+.resume-section {
+margin-bottom: 60px;
+}
+
+.resume__title {
+    margin-bottom: 30px;
 }
 
 .resume__subtitle {
     text-align: center
+}
+
+.resume__first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .resume__text-first {
@@ -168,7 +187,7 @@ font-size: 65px;
     width: 100%;
     justify-content: center;
     gap: 100px;
-    
+    margin-bottom: 40px;
 }
 
 .resume__text-second {
@@ -194,13 +213,123 @@ text-align: center;
 
 /* Projects Section */
 .projects-section {
-    
+    margin-bottom: 20px;
 }
+
+.projects__title {
+    margin-bottom: 30px;
+}
+
+.projects__subtitle {
+    text-align: center;
+}
+
+.projects__text {
+    max-width: 800px;
+}
+
+.projects__cakeshop {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.projects__cake-shop {
+    width: 30%;
+    height: auto;
+    margin-top: -25px;
+}
+
+.projects__portfolio {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.projects__portfolio-photo {
+    width: 30%;
+    height: auto;
+    margin-top: -25px;
+}
+
+.projects__colorside {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.projects__colorside-tutorial {
+    width: 30%;
+    height: auto;
+
+}
+
+
 /* Footer */
 .footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
    background-image: url(/images/footer-fon.jpg);
-   z-index: -1;
 }
-.icon {
-    fill: white;
+
+.footer__menu-link {
+     padding: 8px;  
+}
+
+.footer-addrees-div {
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer__address-icon {
+    fill:white;
+}
+
+.footer__address-icon:hover {
+    fill: var(--color-brand-light);
+    transition: 0.5s;
+}
+
+.footer__address-link {
+    margin-bottom: 20px;
+}
+
+
+.footer__address-link {
+    color: white;
+}
+
+.footer__address-link:hover {
+    color: var(--color-brand-light);
+    transition: 0.5s;
+}
+
+.footer__address-link__phone {
+    margin-top: 8px;
+}
+
+.footer__address-copyrightpolit {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer__address-copyrightpolit:hover {
+    color: var(--color-brand-light);
+    transition: 0.5s;
+}
+
+.footer__address-copyright {
+    color: white;
 }
