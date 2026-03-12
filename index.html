@@ -9,20 +9,61 @@
 <body>
 <header class="header">
     <div class="header__container">
-        <ul class="header__menu">
+        <div class="header__container-menu">
+            <ul class="header__menu">
+                <li>
+                    <a class="link" href="#biography-section">Про мене</a>
+                </li>
+                <li>
+                    <a class="link" href="#resume-section">Резюме</a>
+                </li>
+                <li>
+                    <a class="link" href="#projects-section">Мої проекти</a>
+                </li>
+                <li>
+                    <a class="link" href="#contact-section">Контакти</a>
+                </li>
+            </ul>
+        <a href="tel:+41764466291" class="header__button-call">
+            Замовити дзвінок
+        </a>
+        </div>
+        </button>
+        <button class="header__burger menu-btn-open" type="button">
             <li>
-                <a class="link" href="#biography-section">Про мене</a>
+                <a href="#">
+                    <svg width="24" height="24">
+                        <use href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </a>
             </li>
-            <li>
-                <a class="link" href="#resume-section">Резюме</a>
-            </li>
-            <li>
-                <a class="link" href="#projects-section">Мої проекти</a>
-            </li>
-            <li>
-                <a class="link" href="#contact-section">Контакти</a>
-            </li>
-        </ul>
+        </button>
+        <div class="mobile-menu ">
+            </a>
+            <ul class="mobile-menu__menu">
+                <li>
+                    <a class="link__mobile-menu " href="#biography-section">Про мене</a>
+                </li>
+                <li>
+                    <a class="link__mobile-menu" href="#resume-section">Резюме</a>
+                </li>
+                <li>
+                    <a class="link__mobile-menu" href="#projects-section">Мої проекти</a>
+                </li>
+                <li>
+                    <a class="link__mobile-menu" href="#contact-section">Контакти</a>
+                </li>
+            </ul>
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./images/sprite.svg#icon-cross"></use>
+                        </svg>
+                    </a>
+                </li>
+            </button>
+        </div>
         <h1 class="header__name">Костюченко Михайло</h1>
         <img class="header__main" src="./images/my-photo1.jpg" alt="Основна фотографія">
     </div>
