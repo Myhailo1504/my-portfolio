@@ -29,7 +29,7 @@
         </a>
         </div>
         </button>
-        <button class="header__burger menu-btn-open" type="button">
+        <button class="header__burger modal-btn-open" type="button">
             <li>
                 <a href="#">
                     <svg width="24" height="24">
@@ -38,31 +38,36 @@
                 </a>
             </li>
         </button>
-        <div class="mobile-menu ">
-            </a>
-            <ul class="mobile-menu__menu">
-                <li>
-                    <a class="link__mobile-menu " href="#biography-section">Про мене</a>
-                </li>
-                <li>
-                    <a class="link__mobile-menu" href="#resume-section">Резюме</a>
-                </li>
-                <li>
-                    <a class="link__mobile-menu" href="#projects-section">Мої проекти</a>
-                </li>
-                <li>
-                    <a class="link__mobile-menu" href="#contact-section">Контакти</a>
-                </li>
-            </ul>
-            <button class="mobile-menu__btn-close menu-btn-close" type="button">
-                <li>
-                    <a href="#">
-                        <svg width="24" height="24">
-                            <use href="./images/sprite.svg#icon-cross"></use>
-                        </svg>
+        <div class="backdrop is-hidden">
+            <div class="modal">
+                <button class="mobile-menu__btn-close modal-btn-close" type="button">
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use href="./images/sprite.svg#icon-cross"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </button>
+                <form name="modal-form" autocomplete="off">
                     </a>
-                </li>
-            </button>
+                    <ul class="mobile-menu">
+                        <li>
+                            <a class="link__mobile-menu " href="#biography-section">Про мене</a>
+                        </li>
+                        <li>
+                            <a class="link__mobile-menu" href="#resume-section">Резюме</a>
+                        </li>
+                        <li>
+                            <a class="link__mobile-menu" href="#projects-section">Мої проекти</a>
+                        </li>
+                        <li>
+                            <a class="link__mobile-menu" href="#contact-section">Контакти</a>
+                        </li>
+                    </ul>
+                    <a>
+                </form>
+            </div>
         </div>
         <h1 class="header__name">Костюченко Михайло</h1>
         <img class="header__main" src="./images/my-photo1.jpg" alt="Основна фотографія">
@@ -430,6 +435,7 @@
         </div>
     </div>
 </div>
-</footer>    
+</footer>   
+<script src="/js/mobile-menu.js"></script> 
 </body>
 </html>

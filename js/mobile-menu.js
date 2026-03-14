@@ -1,17 +1,19 @@
-const mobileMenu = document.querySelector('.mobile-menu');
-const menuBtnOpen = document.querySelector('.menu-btn-open');
-const menuBtnClose = document.querySelector('.menu-btn-close');
+const modal = document.querySelector('.backdrop');
+const modalBtnOpen = document.querySelectorAll('.modal-btn-open');
+const modalBtnClose = document.querySelectorAll('.modal-btn-close');
+const menuLinks = document.querySelectorAll('.link__mobile-menu');
 
-const toggleMenu = () => mobileMenu.classList.toggle('is-open');
+const toggleModal = () => {
+  modal.classList.toggle('is-hidden');
+};
 
-menuBtnOpen.addEventListener('click', toggleMenu);
-menuBtnClose.addEventListener('click', toggleMenu);
+modalBtnOpen.forEach(btn => {
+  btn.addEventListener('click', toggleModal);
+});
 
-
-const mobileMenuLinks = document.querySelectorAll('.link__mobile-menu');
-
-mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-  });
+modalBtnClose.forEach(btn => {
+  btn.addEventListener('click', toggleModal);
+}); 
+menuLinks.forEach(link => {
+  link.addEventListener('click', toggleModal);
 });
