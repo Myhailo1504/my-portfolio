@@ -1,0 +1,102 @@
+@use '../variables/variables' as *;
+
+.header {
+    margin-bottom: 60px;
+
+    &__container {
+        display: flex;
+        background-image: url(/images/black-fon.jpg);
+        width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 0;
+    }
+    
+    &__container-menu {
+        position: absolute;
+        justify-content: center;
+        top: 15px;
+
+    }
+    
+    &__menu {
+        display: flex;
+        width: 100%;
+        gap: 70px;
+        
+        @media screen and (max-width: 1020px) {
+            display: none;
+        }
+    }
+    
+    &__button-call {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+
+        @media screen and (max-width: 1020px) {
+            right: 75px;
+        }
+        
+    }
+    
+    &__name {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: white;
+        font-size: 50px;
+
+        @media screen and (max-width: 1020px) {
+            font-size: 38px;
+        }
+
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 28px;
+        }
+
+        @media screen and (max-width: 560px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            font-size: 15px;
+        }
+    }
+
+    
+    &__main {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    &__burger {
+        position: absolute;
+        top: -200px;
+        right: -200px;
+
+        @media screen and (max-width: 1020px) {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }        
+    }
+}
+
+.button-call {
+    padding: 12px 24px;
+    background-color: silver;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover {
+        color: white;
+        background-color: transparent;
+        transition: 0.4s;
+    }
+}

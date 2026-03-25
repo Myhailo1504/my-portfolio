@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моє портфоліо</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <header class="header">
@@ -24,11 +24,12 @@
                     <a class="link" href="#contact-section">Контакти</a>
                 </li>
             </ul>
-        <a href="tel:+41764466291" class="header__button-call">
-            Замовити дзвінок
-        </a>
         </div>
-        </button>
+        <div class="header__button-call">
+            <a href="tel:+41764466291" class="button-call">
+                Замовити дзвінок
+            </a>
+        </div>
         <button class="header__burger modal-btn-open" type="button">
             <li>
                 <a href="#">
@@ -38,46 +39,46 @@
                 </a>
             </li>
         </button>
-        <div class="backdrop is-hidden">
-            <div class="modal">
-                <button class="mobile-menu__btn-close modal-btn-close" type="button">
-                    <li>
-                        <a href="#">
-                            <svg width="24" height="24">
-                                <use href="./images/sprite.svg#icon-cross"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </button>
-                <form name="modal-form" autocomplete="off">
-                    </a>
-                    <ul class="mobile-menu">
-                        <li>
-                            <a class="link__mobile-menu " href="#biography-section">Про мене</a>
-                        </li>
-                        <li>
-                            <a class="link__mobile-menu" href="#resume-section">Резюме</a>
-                        </li>
-                        <li>
-                            <a class="link__mobile-menu" href="#projects-section">Мої проекти</a>
-                        </li>
-                        <li>
-                            <a class="link__mobile-menu" href="#contact-section">Контакти</a>
-                        </li>
-                    </ul>
-                    <a>
-                </form>
-            </div>
-        </div>
         <h1 class="header__name">Костюченко Михайло</h1>
-        <img class="header__main" src="./images/my-photo1.jpg" alt="Основна фотографія">
+            <img class="header__main" src="./images/my-photo1.jpg" alt="Основна фотографія">
+            <div class="backdrop is-hidden">
+                <div class="modal">
+                    <button class="mobile-menu__btn-close modal-btn-close" type="button">
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </button>
+                    <form name="modal-form" autocomplete="off">
+                        </a>
+                        <ul class="mobile-menu">
+                            <li>
+                                <a class="link__mobile-menu " href="#biography-section">Про мене</a>
+                            </li>
+                            <li>
+                                <a class="link__mobile-menu" href="#resume-section">Резюме</a>
+                            </li>
+                            <li>
+                                <a class="link__mobile-menu" href="#projects-section">Мої проекти</a>
+                            </li>
+                            <li>
+                                <a class="link__mobile-menu" href="#contact-section">Контакти</a>
+                            </li>
+                        </ul>
+                        <a>
+                    </form>
+                </div>
+            </div>
     </div>
 </header>
 <main>
-<section class="biography-section" id="biography-section">
-    <h2 class="biography__title">Про мене</h2>
-    <div class="biography__first">
-        <p class="biography__text">
+ <section class="biography-section" id="biography-section">
+    <h2 class="biography-section__title">Про мене</h2>
+    <div class="biography-section__first">
+        <p class="biography-section__text">
             Молодий IT-спеціаліст, який будує своє майбутнє в цифровому світі <br>
 
             Мене звати Костюченко Михайло, мені 23 роки. Я народився та виріс у невеликому місті Шостка Сумської області —
@@ -98,11 +99,11 @@
             прийняв усвідомлене рішення продовжити навчання у рідному місті — нині я студент 4 курсу Шосткинського інституту
             Сумського державного університету та завершую навчання цього року.<br>
         </p>
-        <img class="biography__Sumdu" src="/images/СУМДУ.png" alt="Зображення СУМДУ">
+        <img class="biography-section__first__Sumdu" src="/images/СУМДУ.png" alt="Зображення СУМДУ">
     </div>
-    <div class="biography__second">
-        <img class="biography__it-shostka" src="./images/IT-Shostka.jpeg" alt="Зображення курсів IT-Шостка">
-        <p class="biography__text">
+    <div class="biography-section__second">
+        <img class="biography-section__second__it-shostka" src="./images/IT-Shostka.jpeg" alt="Зображення курсів IT-Шостка">
+        <p class="biography-section__text biography-section__second__text">
             Упродовж життя спорт був невід’ємною частиною мого розвитку. Він навчив мене дисципліні, витривалості, самоконтролю
             та
             постійній роботі над собою. Я переконаний, що саме спорт сформував у мені силу характеру та вміння не зупинятися
@@ -121,8 +122,8 @@
             системне навчання на developer-спеціаліста.<br>
         </p>
     </div>
-    <div class="biography__third">
-        <p class="biography__text">
+    <div class="biography-section__third">
+        <p class="biography-section__text">
             Наразі я проходжу навчання в Genius Space, де опановую сучасну веб-розробку. Перший етап був присвячений
             створенню
             веб-сайтів за допомогою HTML та CSS. У процесі навчання я створив свій перший проєкт, а також другий — власне
@@ -141,11 +142,11 @@
             штучний
             інтелект не як заміну спеціаліста, а як потужний інструмент для розвитку та пришвидшення професійного росту.<br>
         </p>
-        <img class="biography__genius-space" src="./images/IT-Genius space.jpg" alt="Зображення курсів IT Genius Space">
+        <img class="biography-section__third__genius-space" src="./images/IT-Genius space.jpg" alt="Зображення курсів IT Genius Space">
     </div>   
-    <div class="biography__fourth">
-        <img class="biography__full-stack" src="./images/full-stack.png" alt="Кінець біографічної секції">
-        <p class="biography__text">
+    <div class="biography-section__fourth">
+        <img class="biography-section__fourth__full-stack" src="./images/full-stack.png" alt="Кінець біографічної секції">
+        <p class="biography-section__text biography-section__fourth__text">
         
             Мій рівень англійської мови наразі — впевнений A2, проте я системно навчаюся з репетиторами та щодня практикую мову,
             тому вже наближаюся до рівня B1. Також паралельно підвищую рівень італійської мови, оскільки проживаю в
@@ -160,12 +161,12 @@
             світі.
         </p>
     </div>   
-</section>
+</section> 
 <section class="resume-section" id="resume-section">
-    <h2 class="resume__title">Junior Frontend Developer</h2>
-    <div class="resume__first">
+    <h2 class="resume-section__title">Junior Frontend Developer</h2>
+    <div class="resume-section__first">
         <div>
-            <p class="resume__text-first">
+            <p class="resume-section__first__text">
                 📍 Швейцарія (готовий до віддаленої роботи)<br>
                 📧 mihailkostucenko63@gmail.com<br>
                 📞 +380986177950- український, +41764466291- швейцарський.<br>
@@ -173,8 +174,8 @@
                 🔗 Portfolio: https://github.com/Myhailo1504/my-portfolio.git
             </p>
             <div>
-                <h3 class="resume__subtitle">ПРОФЕСІЙНИЙ ПРОФІЛЬ</h3>
-                <p class="resume__text-first">
+                <h3 class="resume-section__subtitle">ПРОФЕСІЙНИЙ ПРОФІЛЬ</h3>
+                <p class="resume-section__first__text">
                     Мотивований Junior Frontend Developer із технічним складом мислення та понад 6 місяцями інтенсивного навчання у
                     сфері
                     IT. Маю впевнені знання HTML та CSS, досвід створення адаптивних веб-сайтів і роботи з Git, GitHub, Figma та
@@ -186,15 +187,15 @@
                 </p>
             </div>
         </div>
-        <iframe class="resume__map"
+            <iframe class="resume-section__first__map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11084.6319780691!2d8.945959!3d46.0080387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842d89f120b751%3A0x4f050c509c4fb2d3!2sSalita%20dei%20Frati!5e0!3m2!1sru!2sch!4v1773052808815!5m2!1sru!2sch"
-            width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+             allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="resume__second">
-        <div class="resume__tehnical-scills">
-            <h3 class="resume__subtitle">ТЕХНІЧНІ НАВИЧКИ</h3>
-            <p class="resume__text-second">
+    <div class="resume-section__second">
+        <div class="resume-section__second__tehnical-scills">
+            <h3 class="resume-section__subtitle">ТЕХНІЧНІ НАВИЧКИ</h3>
+            <p class="resume-section__second__text">
                 Frontend:<br>
                 HTML5<br>
                 CSS3<br>
@@ -214,9 +215,9 @@
                 Defold (розробка початкових ігрових проєктів)<br>
             </p>
         </div>
-        <div class="resume__project">
-            <h3 class="resume__subtitle">ПРОЄКТИ</h3>
-            <p class="resume__text-second">
+        <div class="resume-section__second__project">
+            <h3 class="resume-section__subtitle">ПРОЄКТИ</h3>
+            <p class="resume-section__second__text">
                 1. Website “Bakery”<br>
                 Адаптивний веб-сайт пекарні.<br>
                 Реалізовано:<br>
@@ -235,9 +236,9 @@
                 GitHub: всі проєкти доступні у відкритому доступі.
             </p>
         </div>
-        <div>
-            <h3 class="resume__subtitle">ДОСВІД РОБОТИ</h3>
-            <p class="resume__text-second resume__text-second--last">
+        <div class="resume-section__second__exsperience-work">
+            <h3 class="resume-section__subtitle">ДОСВІД РОБОТИ</h3>
+            <p class="resume-section__second__text resume-section__second__text--last">
                 Завідувач складу (військове виробництво)
                 2022 – 2025 <br>
                 🔹Організація обліку матеріалів<br>
@@ -249,18 +250,18 @@
             </p>
         </div>
     </div>
-    <div class="resume__third">
+    <div class="resume-section__third">
         <div>
-            <h3 class="resume__subtitle">ОСВІТА</h3>
-            <p class="resume__text-third">
+            <h3 class="resume-section__subtitle">ОСВІТА</h3>
+            <p class="resume-section__third__text">
                 Шосткинський інститут Сумського державного університету<br>
                 Спеціальність: Обладнання хімічних виробництв і підприємств будівельних матеріалів<br>
                 2022 – 2026 (очікуване завершення — червень 2026)
             </p>
         </div>
         <div>
-            <h3 class="resume__subtitle">МОВИ</h3>
-            <p class="resume__text-third">
+            <h3 class="resume-section__subtitle">МОВИ</h3>
+            <p class="resume-section__third__text">
                 Українська — рідна<br>
                 Російська — вільно<br>
                 Англійська — A2 (B1 in progress)<br>
@@ -270,11 +271,11 @@
     </div>
 </section>
 <section class="projects-section" id="projects-section">
-<h2 class="projects__title">Мої проекти</h2>
-<div class="projects__cakeshop">
+<h2 class="projects-section__title">Мої проекти</h2>
+<div class="projects-section__cakeshop">
     <div>
-        <h3 class="projects__subtitle">📌 Проєкт №1 — “Genius Test”</h3>
-        <p class="projects__text">
+        <h3 class="projects-section__subtitle">📌 Проєкт №1 — “Genius Test”</h3>
+        <p class="projects-section__text">
             🔗 https://github.com/Myhailo1504/genius_test <br>
         
             Це перший повністю завершений веб-проєкт, який я створив самостійно з використанням сучасних веб-технологій HTML,
@@ -294,13 +295,13 @@
             🔹Показав здатність доводити проєкт до логічного і технічного завершення.
         </p>
     </div>
-    <img class="projects__cake-shop" src="./images/cake-shop.png" alt="Проект №1">
+    <img class="projects-section__cakeshop__photo" src="./images/cake-shop.png" alt="Проект №1">
 </div>
-<div class="projects__portfolio">
-    <img class="projects__portfolio-photo" src="./images/portfolio.png" alt="Проект №2">
+<div class="projects-section__portfolio">
+    <img class="projects-section__portfolio__photo" src="./images/portfolio.png" alt="Проект №2">
     <div>
-        <h3 class="projects__subtitle">📌 Проєкт №2 — “My Portfolio”</h3>
-        <p class="projects__text">
+        <h3 class="projects-section__subtitle">📌 Проєкт №2 — “My Portfolio”</h3>
+        <p class="projects-section__text">
             🔗 https://github.com/Myhailo1504/my-portfolio <br>
         
             Це персональний веб-сайт-портфоліо, який я створив для демонстрації своїх навичок і досвіду. Портфоліо є основою для
@@ -320,10 +321,10 @@
         </p>
     </div>
 </div>
-<div class="projects__colorside">
+<div class="projects-section__colorside">
     <div>
-        <h3 class="projects__subtitle">📌 Початковий проєкт №3 - “Colorside Tutorial”</h3>
-        <p class="projects__text">
+        <h3 class="projects-section__subtitle">📌 Початковий проєкт №3 - “Colorside Tutorial”</h3>
+        <p class="projects-section__text">
             🔗 https://github.com/Myhailo1504/colorside_tutorial<br>
         
             Цей проєкт був створений у процесі мого навчання розробці ігор із використанням мови програмування Lua та ігрового
@@ -349,89 +350,89 @@
             🔹почав використовувати GitHub для збереження та публікації своїх проєктів
         </p>
     </div>
-    <img class="projects__colorside-tutorial" src="./images/colorside-tutorial.png" alt="Проект №3">
+    <img class="projects-section__colorside__photo" src="./images/colorside-tutorial.png" alt="Проект №3">
 </div>
 </section>
 </main>
 <footer class="footer">
 <div class="footer-section" id="contact-section">
-    <div class="footer__link">
-        <ul class="footer__menu">
-            <div class="footer__menu-link">
+    <div class="footer-section__link">
+        <ul class="footer-section__menu">
+            <div class="footer-section__menu-link">
                 <li>
                     <a class="link" href="#biography-section">Про мене</a>
                 </li>
             </div>
-            <div class="footer__menu-link">
+            <div class="footer-section__menu-link">
                 <li>
                     <a class="link" href="#resume-section">Резюме</a>
                 </li>
             </div>
-            <div class="footer__menu-link">
+            <div class="footer-section__menu-link">
                 <li>
                     <a class="link" href="#projects-section">Мої проекти</a>
                 </li>
             </div>
-            <div class="footer__menu-link">
+            <div class="footer-section__menu-link">
                 <li>
                     <a class="link" href="#contact-section">Контакти</a>
                 </li>
             </div>
         </ul>
     </div>
-    <div class="footer-addrees-div">
+    <div class="footer-section__div">
         <div>
             <a href="mailto:mihailkostucenko63@gmail.com">
-                <svg class="footer__address-icon" width="32" height="32">
+                <svg class="footer-section__div__address-icon" width="32" height="32">
                     <use href="./images/sprite.svg#icon-google3"></use>
                 </svg>
             </a>
         </div>
         <div>
             <a href="https://www.instagram.com/m_kostuchenko?igsh=MXR2dnVrc3luZzRqcw%3D%3D&utm_source=qr">
-                <svg class="footer__address-icon" width="32" height="32">
+                <svg class="footer-section__div__address-icon" width="32" height="32">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
             </a>
         </div>
         <div>
             <a href="https://t.me/suport318">
-                <svg class="footer__address-icon" width="32" height="32">
+                <svg class="footer-section__div__address-icon" width="32" height="32">
                     <use href="./images/sprite.svg#icon-telegram"></use>
                 </svg>
             </a>
         </div>
         <div>
             <a href="https://github.com/Myhailo1504">
-                <svg class="footer__address-icon" width="32" height="32">
+                <svg class="footer-section__div__address-icon" width="32" height="32">
                     <use href="./images/sprite.svg#icon-github"></use>
                 </svg>
             </a>
         </div>
         <div>
             <a href="http://linkedin.com/in/михаил-костюченко-418a89352">
-                <svg class="footer__address-icon" width="32" height="32">
+                <svg class="footer-section__div__address-icon" width="32" height="32">
                     <use href="./images/sprite.svg#icon-linkedin2"></use>
                 </svg>
             </a>
         </div>
     </div>
-    <div class="footer__info-list">
-        <div class="footer__address-list">
+    <div class="footer-section__info-list">
+        <div class="footer-section__address-list">
             <ul>
                 <li>
-                    <a class="footer__address-link footer__address-link__phone" href="tel:+41764466291">+41764466291</a>
+                    <a class="footer-section__address-link footer-section__address-link__phone" href="tel:+41764466291">+41764466291</a>
                 </li>
                 <li>
-                    <a class="footer__address-link" href="https://maps.app.goo.gl/bwxBczSHMD1bpT2e8" target="_blank">
+                    <a class="footer-section__address-link" href="https://maps.app.goo.gl/bwxBczSHMD1bpT2e8" target="_blank">
                         Salita dei Frati 4, Lugano, Switzerland
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="footer__address-info">
-            <a class="footer__address-copyrightpolit" href="#" target="_blank">Політика конфіденційності</a>
-            <p class="footer__address-copyright">&copy; 2026 Дані захищені</p>
+        <div class="footer-section__address-info">
+            <a class="footer-section__address-copyrightpolit" href="#" target="_blank">Політика конфіденційності</a>
+            <p class="footer-section__address-copyright">&copy; 2026 Дані захищені</p>
         </div>
     </div>
 </div>

@@ -1,0 +1,88 @@
+@use '../variables/variables' as *;
+
+.resume-section {
+    margin-bottom: 60px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        text-align: center
+    }
+
+    &__first {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        &__text {
+            max-width: 550px;
+            width: 100%;
+            margin: 15px;
+            text-align: center;
+        }
+
+        &__map {
+            width: 500px ;
+            height: 305px;
+            border-radius: 8px;
+            margin-right: 15px;
+
+            @media screen and (max-width: 1160px){
+                width: 300px;
+                height: 305px;
+            }
+
+            @media screen and (max-width: 980px) {
+                width: 200px;
+                height: 305px;
+            }
+
+            @media screen and (max-width: 780px) {
+                display: none;
+            }
+        }
+    }
+
+    &__second {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: $bp-tablet) {
+            gap: 30px;
+        }
+
+        @media screen and (max-width: $bp-mobile) {
+            display: block;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    &__third {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+
+        @media screen and (max-width: $bp-tablet) {
+          gap: 40px;  
+        }
+
+        &__text {
+            max-width: 400px;
+            width: 100%;
+            margin: 15px;
+            text-align: center;
+        }
+    }
+
+}
+
+
+

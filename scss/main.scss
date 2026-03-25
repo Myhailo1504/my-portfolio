@@ -1,0 +1,20 @@
+// variables
+@use 'variables/variables' as *;
+/* fonts */
+@use 'base/fonts';
+/* base */
+@use 'base/base';
+/* link */
+@use 'components/link';
+/* backdrop*/
+@use 'components/backdrop';
+/* header */
+@use 'components/header';
+/* Biography Section */
+@use 'components/biography';
+/* Resume Section */
+@use 'components/resume';
+/* Projects Section */
+@use 'components/project';
+/* Footer */
+@use 'components/footer';

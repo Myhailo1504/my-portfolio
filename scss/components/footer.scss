@@ -1,0 +1,67 @@
+@use '../variables/variables' as *;
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/images/footer-fon.jpg);
+
+    &__menu-link {
+        padding: 8px;
+    }
+
+    &__div {
+        display: flex;
+        gap: 20px;
+
+        @media screen and (max-width: $bp-tablet) {
+            display: block;
+            gap: 10px;
+        }
+         
+        &__address-icon {
+            fill: white;
+
+            &:hover {
+                fill: $color-primary-light;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    &__address-link {
+        margin-bottom: 20px;
+        color: white;
+    
+        &:hover {
+            color: $color-brand-light;
+            transition: 0.5s;
+        }
+    }
+    
+    &__address-link__phone {
+        margin-top: 8px;
+    }
+
+    &__info-list {
+        margin-left: 0;
+
+        @media screen and (max-width: $bp-mobile) {
+            margin-left: 15px;
+        }
+    }
+
+    &__address-copyrightpolit {
+        color: white;
+        margin-bottom: 20px;
+    
+        &:hover {
+            color: $color-brand-light;
+            transition: 0.5s;
+        }
+    }
+    
+    &__address-copyright {
+        color: white;
+    }
+}

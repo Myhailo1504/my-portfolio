@@ -1,0 +1,78 @@
+@use '../variables/variables' as *;
+
+.projects-section {
+    margin-bottom: 20px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+    
+    &__subtitle {
+        text-align: center;
+    }
+    
+    &__text {
+        max-width: 800px;
+        width: 100%;
+
+        @media screen and (max-width: $bp-tablet) {
+            text-align: center;
+        }
+    }
+    
+    &__cakeshop {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        &__photo {
+            width: 30%;
+            height: auto;
+            margin-top: -25px;
+
+            @media screen and (max-width: $bp-tablet) {
+                display: none;
+            }
+        }
+    }
+
+    &__portfolio {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        &__photo {
+            width: 30%;
+            height: auto;
+            margin-top: -25px;
+
+            @media screen and (max-width: $bp-tablet) {
+                display: none;
+            }
+        }
+    }
+
+    &__colorside {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        &__photo {
+            width: 30%;
+            height: auto;
+
+            @media screen and (max-width: $bp-tablet) {
+                display: none;
+            }
+        }
+    }
+}
